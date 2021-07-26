@@ -36,6 +36,7 @@ http://localhost:3000/#/
 
 Let's try to send a message:
 1. via curl
+
 curl --location --request POST 'http://localhost:3000/api/send-message' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -55,7 +56,9 @@ Go to the "screenshot" section and get a screenshot http://localhost:3000/#/scre
 
 
 thanks to 
+
 venom https://github.com/orkestral/venom.
+
 allburov https://github.com/allburov/whatsapp-http-api
 
 
