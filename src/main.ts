@@ -11,9 +11,9 @@ async function bootstrap() {
 
     app.enableShutdownHooks();
     const options = new DocumentBuilder()
-        .setTitle('WhatsApp venom API')
+        .setTitle('WhatsApp API venom')
         .setDescription('WhatsApp HTTP API that you can configure in a click!')
-        .setExternalDoc("Github WhatsApp HTTP API", "https://github.com/diazzaid/whatsapp-venom-api")
+        .setExternalDoc("Github WhatsApp API venom", "https://github.com/diazzaid/whatsapp-api-venom")
         .setVersion('1.0')
         .addTag('device', 'Device information')
         .addTag('chatting', 'Chat methods')
