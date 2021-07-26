@@ -20,62 +20,62 @@ export class ChattingController {
 
     @Post('/sendContactVcard')
     sendContactVcard(@Body() message: MessageContactVcard) {
-        return this.whatsapp.sendContactVcard(message.chatId, message.contactsId, message.name)
+        return this.whatsapp.sendContactVcard(message.number + '@c.us', message.contactsId, message.name)
     }
 
-    @Post('/sendText')
-    @ApiOperation({summary: 'Send a text message'})
+    @Post('/send-message')
+    @ApiOperation({summary: 'Send a message message'})
     sendText(@Body() message: MessageText) {
-        return this.whatsapp.sendText(message.chatId, message.text)
+        return this.whatsapp.sendText(message.number + '@c.us', message.message)
     }
 
-    @Post('/sendLocation')
+    @Post('/send-location')
     sendLocation(@Body() message: MessageLocation) {
-        return this.whatsapp.sendLocation(message.chatId, message.latitude, message.longitude, message.title)
+        return this.whatsapp.sendLocation(message.number + '@c.us', message.latitude, message.longitude, message.title)
     }
 
-    @Post('/sendLinkPreview')
+    @Post('/send-linkPreview')
     sendLinkPreview(@Body() message: MessageLinkPreview) {
-        return this.whatsapp.sendLinkPreview(message.chatId, message.url, message.title)
+        return this.whatsapp.sendLinkPreview(message.number + '@c.us', message.url, message.title)
     }
 
-    @Post('/sendImage')
+    @Post('/send-image')
     @ApiOperation({summary: 'NOT IMPLEMENTED YET'})
     sendImage(@Body() message: MessageImage) {
         throw new NotImplementedException();
         // TODO: Accept image URL, download it and then send with path
-        return this.whatsapp.sendImage(message.chatId, message.path, message.filename, message.caption)
+        return this.whatsapp.sendImage(message.number + '@c.us', message.path, message.filename, message.caption)
     }
 
-    @Post('/sendFile')
+    @Post('/send-file')
     @ApiOperation({summary: 'NOT IMPLEMENTED YET'})
     sendFile(@Body() message: MessageFile) {
         throw new NotImplementedException();
         // TODO: Accept File URL, download it and then send with path
-        return this.whatsapp.sendFile(message.chatId, message.path, message.filename, message.caption)
+        return this.whatsapp.sendFile(message.number + '@c.us', message.path, message.filename, message.caption)
     }
 
     @Post('/reply')
-    @ApiOperation({summary: 'Reply to a text message'})
+    @ApiOperation({summary: 'Reply to a message message'})
     reply(@Body() message: MessageReply) {
-        return this.whatsapp.reply(message.chatId, message.text, message.reply_to)
+        return this.whatsapp.reply(message.number + '@c.us', message.message, message.reply_to)
     }
 
-    @Post('/sendSeen')
+    @Post('/send-seen')
     sendSeen(@Body() chat: Chat) {
-        return this.whatsapp.sendSeen(chat.chatId)
+        return this.whatsapp.sendSeen(chat.number)
     }
 
-    @Post('/startTyping')
+    @Post('/start-typing')
     startTyping(@Body() chat: Chat) {
         // It's infinitive action
-        this.whatsapp.startTyping(chat.chatId)
+        this.whatsapp.startTyping(chat.number)
         return true
     }
 
-    @Post('/stopTyping')
+    @Post('/stop-typing')
     stopTyping(@Body() chat: Chat) {
-        this.whatsapp.stopTyping(chat.chatId)
+        this.whatsapp.stopTyping(chat.number)
         return true
     }
 }
