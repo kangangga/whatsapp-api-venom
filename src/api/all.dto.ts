@@ -1,31 +1,31 @@
 import {ApiProperty} from "@nestjs/swagger";
 
-const chatId = ApiProperty({
-    example: '791231234567@c.us'
+const number = ApiProperty({
+    example: '6281224993382'
 })
 
 export class Chat {
-    @chatId
-    chatId: string;
+    @number
+    number: string;
 }
 
 export class MessageContactVcard {
-    @chatId
-    chatId: string;
+    @number
+    number: string;
     contactsId: string;
     name: string
 }
 
 export class MessageText {
-    @chatId
-    chatId: string;
-    text: string;
+    @number
+    number: string;
+    message: string;
 }
 
 export class MessageReply {
-    @chatId
-    chatId: string;
-    text: string;
+    @number
+    number: string;
+    message: string;
     @ApiProperty({
         example: 'message.id',
     })
@@ -33,32 +33,32 @@ export class MessageReply {
 }
 
 export class MessageLocation {
-    @chatId
-    chatId: string;
+    @number
+    number: string;
     latitude: string;
     longitude: string;
     title: string;
 }
 
 export class MessageImage {
-    @chatId
-    chatId: string;
+    @number
+    number: string;
     path: string;
     filename: string;
     caption: string;
 }
 
 export class MessageFile {
-    @chatId
-    chatId: string;
+    @number
+    number: string;
     path: string;
     filename: string;
     caption: string;
 }
 
 export class MessageLinkPreview {
-    @chatId
-    chatId: string;
+    @number
+    number: string;
     url: string;
     title: string;
 }
