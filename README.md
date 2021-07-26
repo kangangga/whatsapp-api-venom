@@ -24,7 +24,7 @@ The project is an HTTP wrapper around https://github.com/orkestral/venom, so we 
 4. npm start
 5. scan qrcode via terminal
 ![image](https://user-images.githubusercontent.com/25816482/126972185-4747f027-8640-4626-85cc-0a9295558a81.png)
-6. session Connectes
+6. session Connected
 ![image](https://user-images.githubusercontent.com/25816482/126972405-20eeca06-6f81-4ad1-a99d-9df2b16f76d7.png)
 
 Run WhatsApp venom API:
@@ -55,7 +55,7 @@ Go to the "screenshot" section and get a screenshot http://localhost:3000/#/scre
 
 
 thanks to 
-venom https://github.com/orkestral/venom
+venom https://github.com/orkestral/venom.
 allburov https://github.com/allburov/whatsapp-http-api
 
 
