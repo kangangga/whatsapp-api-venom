@@ -52,7 +52,8 @@ open browser http://localhost:3000/
 ## Get a screenshot
 
 Go to the "screenshot" section and get a screenshot http://localhost:3000/#/screenshot
-![sc venom](https://user-images.githubusercontent.com/25816482/126972678-e853dcee-bce8-4ec3-b726-490b368718df.JPG)
+![image](https://user-images.githubusercontent.com/25816482/126974407-24d35d18-a2f7-4262-aae0-6e68b293bfa1.png)
+
 
 
 thanks to 
