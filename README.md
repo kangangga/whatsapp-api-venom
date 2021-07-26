@@ -18,8 +18,8 @@ The project is an HTTP wrapper around https://github.com/orkestral/venom, so we 
 
 # Installation
 
-1. git clone https://github.com/diazzaid/whatsapp-venom-api.git
-2. cd whatsapp-venom-api
+1. git clone https://github.com/diazzaid/whatsapp-api-venom.git
+2. cd whatsapp-api-venom
 3. npm i
 4. npm start
 5. scan qrcode via terminal
