@@ -17,7 +17,12 @@ The project is an HTTP wrapper around https://github.com/orkestral/venom, so we 
 | 🕸🕸 **and much more**                                       | ✔   |
 
 # Installation
-
+## untuk windows os 
+rubah pada bagian /src/config.service.ts
+bari ke 33 dari '/tmp/whatsapp-files',
+ menjadi 'D:/api-wa/whatsapp-api-venom/tokens/whatsapp-files',
+ sesuaikan dengan direktori masing-masing
+ 
 1. git clone https://github.com/diazzaid/whatsapp-api-venom.git
 2. cd whatsapp-api-venom
 3. npm i
