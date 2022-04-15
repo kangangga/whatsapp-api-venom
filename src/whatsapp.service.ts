@@ -28,16 +28,16 @@ export const whatsappProvider = {
             headless: true,
 	    multidevice: true,
             devtools: false,
-            useChrome: true,
+            //useChrome: true,
             debug: false,
             logQR: true,
-			mkdirFolderToken: '',
+			//mkdirFolderToken: '',
             browserArgs: [
                     '--no-sandbox'
                 ],
             autoClose: 60000,
-            createPathFileToken: true,
-            puppeteerOptions: {},
+            //createPathFileToken: true,
+            //puppeteerOptions: {},
         }
     ),
 }
